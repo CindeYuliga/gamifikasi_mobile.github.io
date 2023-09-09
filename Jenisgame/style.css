@@ -36,6 +36,7 @@ nav a {
   margin-left: 60px;
   font-size: 28px;
   text-decoration: none;
+  color: #300e72;
 }
 nav a:hover {
   color: #5095ef;
@@ -51,7 +52,7 @@ nav a:hover {
   display: none;
   position: absolute;
   background-color: #5095ef;
-  width: 180px;
+  width: 200px;
   z-index: 1;
   border-radius: 20px;
   text-align: center;
