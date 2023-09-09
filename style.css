@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #fff;
+  overflow: auto;
+}
+
+/* judul */
+.judul {
+  background-color: #300e72;
+  padding: 60px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Navigasi */
+nav {
+  background-color: #5095ef;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+
+nav a {
+  margin-left: 60px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #300e72;
+  color: #5095ef;
+}
+
+/* Drop Item */
+.drop {
+  position: relative;
+}
+
+.drop-item {
+  display: none;
+  position: absolute;
+  background-color: #5095ef;
+  width: 180px;
+  z-index: 1;
+  border-radius: 5px;
+  text-align: center;
+}
+.drop li a {
+  background-color: #5095ef;
+
+  display: contents;
+}
+
+.drop:hover .drop-item {
+  display: block;
+}
+
+.drop-item li {
+  padding: 10px;
+}
+
+.drop-item li:hover {
+  background-color: #300e72;
+  color: #5095ef;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  width: 100%;
+}
+
+.slider img {
+  width: 20%;
+}
+
+/* Bagian content */
+
+main {
+  padding: 10px;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #5946d7;
+}
+
+.content {
+  display: flex;
+  flex: 4;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  background-color: #ae3eda;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Bagian class dalam content */
+.Game {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #5095ef;
+}
+
+.gambarGame {
+  width: 100%;
+  max-height: 400px;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Game h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.Game p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Bagian Asside */
+aside {
+  flex: 2;
+  padding: 10px;
+}
+
+/* Tulisan teks terpopuler */
+.textGameTerpopuler {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #ae3eda;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 28px;
+  padding: 10px;
+}
+
+/* bagian gambar dalam asside */
+.profilGame {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #5095ef;
+}
+.profilGame h3 {
+  font-size: 28px;
+  padding: 10px;
+  text-align: center;
+}
+
+.gameTerpopuler {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Bagian dari tabel informasi */
+.informasi_table h3 {
+  justify-content: center;
+  display: flex;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+table {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* Akhir Asside */
+
+/* Bagian Footer */
+footer {
+  padding: 20px;
+  background-color: #5095ef;
+  font-size: 28px;
+  text-align: center;
+  color: #300e72;
+}
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav a {
+    margin-left: 30px;
+    font-size: 24px;
+  }
+  nav {
+    justify-content: center;
+  }
+  nav ul {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .judul {
+    padding: 30px;
+    font-size: 28px;
+  }
+  nav a {
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  .jenisGame {
+    padding: 10px;
+    font-size: 24px;
+  }
+  footer {
+    font-size: 24px;
+  }
+  .teksKontak {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .judul {
+    padding: 20px;
+    font-size: 28px;
+  }
+  .Game h3 {
+    font-size: 24px;
+  }
+}
+
+/* Css kontak */
+.teksKontak {
+  background-color: #ae3eda;
+  text-align: center;
+  padding: 10px;
+  font-size: 28px;
+}
+
+.contentt {
+  min-height: 63vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #0a0a0a;
+  border-radius: 5px;
+  background-color: #5095ef;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #5946d7;
+  color: #fff;
+}
+
+button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #300e72;
+  color: #5095ef;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button[type='submit']:hover {
+  background-color: #5095ef;
+  color: #300e72;
+}
